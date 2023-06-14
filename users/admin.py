@@ -1,8 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from pizza.models import Pizza, Pizzeria
-
 from .forms import CustomUserChangeForm, CustomUserCreationForm
 from .models import CustomUser
 
@@ -50,5 +48,3 @@ class CustomUserAdmin(UserAdmin):
 
 
 admin.site.register(CustomUser, CustomUserAdmin)
-admin.site.register(Pizzeria)
-admin.site.register(Pizza)
